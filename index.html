@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RebuTaxis - Autonomous RoboTaxi Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Navigation -->
+<nav>   
+    <div class="nav-logo">
+        <img src="D:\EnglishWeb\images\RebuTaxis-white.png" alt="RebuTaxis Logo">
+        
+    </div>
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#plans">Plans</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero -->
+<section id="home" class="hero">
+    <video autoplay muted loop playsinline class="hero-video">
+        <source src="videos/header_video.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <div class="hero-left">
+            <h1>REBUTAXIS</h1>
+            <p>Autonomous Mobility, Reinvented</p>
+            <a href="#plans" class="cta-button">View Plans</a>
+        </div>
+        <div class="hero-right">
+            <p> RobuTaxis is redefining urban transportation. Our autonomous vehicles use advanced AI to get 
+                you where you need to go—safely, efficiently, and with zero emissions. We're already serving 
+                thousands of riders who've made the switch to smarter, cleaner mobility. This isn't just the 
+                future of transportation—it's happening right now.</p>
+        </div>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about-section">
+    <div class="about-header">
+        <h2>Software</h2>
+        <p class="about-subtitle">Nuro Driver™</p>
+        <p class="about-description">
+            State-of-the-art AI technology designed to mimic safe natural driving behavior, integrating an end-to-end AI model with reliable safeguards for precision and reliability.
+        </p>
+    </div>
+
+    <div class="about-container">
+        <div class="about-left">
+            <div class="about-media-container">
+                <video id="media-display" src="videos/mapping-video.mp4" autoplay muted loop playsinline class="about-media"></video>
+            </div>
+        </div>
+        <div class="about-right">
+            <div class="about-features">
+                <div class="accordion-item active" data-media="videos/mapping-video.mp4" data-media-type="video">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4>Machine Learning First Mapping</h4>
+                        <span class="feature-number">01</span>
+                        <span class="accordion-icon">−</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p class="featured-tag">Mapping</p>
+                        <p>
+                            At Nuro, we're developing a novel AI-driven mapping approach that combines real-time perception data with low-cost map priors using a geospatial foundation model. This innovation enables precision globalization, online map feature inference, and real-time sensor calibration. Our system responds to changing road and traffic control conditions in real-time, ensuring optimal performance in complex urban environments.
+                        </p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-media="videos/perception-demo.mp4" data-media-type="video">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4>Cutting-Edge Perception</h4>
+                        <span class="feature-number">02</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Advanced computer vision and sensor fusion technology that enables real-time environmental perception and object detection in complex urban scenarios.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-media="images/ai-behavior.jpg" data-media-type="image">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4>AI-Driven Behavior</h4>
+                        <span class="feature-number">03</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Intelligent decision-making systems powered by machine learning that mimic safe, human-like driving behavior while maintaining superior safety standards.</p>
+                    </div>
+                </div>
+                <div class="accordion-item" data-media="videos/controls-demo.mp4" data-media-type="video">
+                    <div class="accordion-header" onclick="toggleAccordion(this)">
+                        <h4>Reliable Controls</h4>
+                        <span class="feature-number">04</span>
+                        <span class="accordion-icon">+</span>
+                    </div>
+                    <div class="accordion-content">
+                        <p>Redundant control systems with multiple layers of safety mechanisms to ensure precise vehicle operation and failsafe protocols in all driving conditions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Plans -->
+<section id="plans" class="plans">
+    <div class="intro">
+        <h2>Our Plans</h2>
+        <p>Choose the plan that best fits your mobility needs.</p>
+    </div>
+
+    <div class="plans-grid">
+        <div class="plan-card">
+            <h3>DAM PLAN</h3>
+            <p class="plan-price">€19/month</p>
+            <ul>
+                <li>✔ Unlimited city rides</li>
+                <li>✔ Standard autonomous vehicles</li>
+                <li>✔ App-based booking</li>
+                <li>✔ 24/7 support</li>
+            </ul>
+            <a href="#" class="cta-button">Choose DAM</a>
+        </div>
+
+        <div class="plan-card">
+            <h3>DAW PLAN</h3>
+            <p class="plan-price">€29/month</p>
+            <ul>
+                <li>✔ Unlimited city rides</li>
+                <li>✔ Premium RoboTaxi fleet</li>
+                <li>✔ Priority pickup</li>
+                <li>✔ Advanced route optimization</li>
+            </ul>
+            <a href="#" class="cta-button">Choose DAW</a>
+        </div>
+    </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="intro">
+    <h2>Contact Us</h2>
+    <p>Ready to ride with RebuTaxis? Get in touch today.</p>
+    <br>
+    <a href="mailto:info@rebutaxis.com" class="cta-button">Email Us</a>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p><strong>RebuTaxis - Autonomous RoboTaxi Services</strong></p>
+    <p>Student: [Your Name] | DAM / DAW</p>
+    <p>2025–2026</p>
+</footer>
+
+<script>
+function toggleAccordion(header) {
+    const item = header.parentElement;
+    const content = header.nextElementSibling;
+    const icon = header.querySelector('.accordion-icon');
+    
+    // Close all other accordion items
+    const allItems = document.querySelectorAll('.accordion-item');
+    allItems.forEach(el => {
+        if (el !== item) {
+            el.classList.remove('active');
+            el.querySelector('.accordion-content').style.maxHeight = null;
+            el.querySelector('.accordion-icon').textContent = '+';
+        }
+    });
+    
+    // Toggle current item
+    item.classList.toggle('active');
+    if (item.classList.contains('active')) {
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.textContent = '−';
+        
+        // Change the media on the left side
+        updateMedia(item);
+    } else {
+        content.style.maxHeight = null;
+        icon.textContent = '+';
+    }
+}
+
+function updateMedia(item) {
+    const mediaType = item.getAttribute('data-media-type');
+    const mediaSrc = item.getAttribute('data-media');
+    const mediaContainer = document.querySelector('.about-media-container');
+    
+    if (mediaType === 'video') {
+        // Create video element
+        const video = document.createElement('video');
+        video.id = 'media-display';
+        video.src = mediaSrc;
+        video.autoplay = true;
+        video.muted = true;
+        video.loop = true;
+        video.playsinline = true;
+        video.className = 'about-media';
+        
+        mediaContainer.innerHTML = '';
+        mediaContainer.appendChild(video);
+    } else {
+        // Create image element
+        const img = document.createElement('img');
+        img.id = 'media-display';
+        img.src = mediaSrc;
+        img.className = 'about-media';
+        img.alt = 'Feature image';
+        
+        mediaContainer.innerHTML = '';
+        mediaContainer.appendChild(img);
+    }
+}
+
+// Initialize the first accordion item on page load
+document.addEventListener('DOMContentLoaded', function() {
+    const activeItem = document.querySelector('.accordion-item.active');
+    if (activeItem) {
+        const content = activeItem.querySelector('.accordion-content');
+        // Set the max-height to show content
+        content.style.maxHeight = content.scrollHeight + 'px';
+        // Update media display
+        updateMedia(activeItem);
+    }
+});
+</script>
+
+</body>
+</html>
