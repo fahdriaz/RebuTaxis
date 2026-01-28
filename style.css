@@ -108,6 +108,8 @@
         .hero-right {
             flex: 1;
             text-align: left;
+            padding-right: 0;
+            margin-left: auto;
         }
 
         .hero-right p {
